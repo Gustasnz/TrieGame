@@ -18,13 +18,14 @@ A estrutura de diretórios e arquivos do projeto está organizada da seguinte fo
 ├── Trie.cpp              # Implementação das funções que podem ser aplicadas a Trie (busca e ordenação)
 ├── GamesDatabase.hpp     # Declaração externa do array de jogos
 └── GamesDatabase.cpp     # Catálogo de jogos
+```
 
 ## Instruções de Compilação
 Para compilar o projeto utilize o comando:
 
 ```bash
 g++ main.cpp Game.cpp Trie.cpp GamesDatabase.cpp -o app
-
+```
 ## Exemplos de Uso pela Linha de Comando
 
 ### Exemplo 1: Busca simples por prefixo
@@ -34,13 +35,15 @@ g++ main.cpp Game.cpp Trie.cpp GamesDatabase.cpp -o app
 Hades | Roguelike de acao baseado na mitologia grega | 95
 Half Life | FPS classico de ficcao cientifica | 92
 Halo | FPS futurista com campanha e multiplayer | 85
-
+```
 ### Exemplo 2: Busca com espaço
+```bash
 ./app 5 "half l"
 
 Half Life | FPS classico de ficcao cientifica | 92
-
+```
 ### Exemplo 3: Sem jogo no database
+```bash
 ./app 3 zelda
 
 No results found
